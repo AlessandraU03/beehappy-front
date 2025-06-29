@@ -12,7 +12,7 @@ const Input = ({ label, name, type = 'text', placeholder, value, onChange, error
   return (
     <div className="flex flex-col w-full">
       {label && (
-        <label htmlFor={name} className="text-sm text-bh-light-blue-gray mb-1">
+        <label htmlFor={name} className="text-sm font-poppins font-semibold text-bh-light-blue-gray mb-1">
           {label}
         </label>
       )}

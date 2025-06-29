@@ -1,8 +1,7 @@
-// src/features/auth/pages/RegisterPage.jsx
 import React from 'react';
 import AuthLayout from '../../shared/layouts/AuthLayout';
 import RegistrationForm from './components/RegisterForm';
-// import BeeHappyLogo from '../../../assets/bee-happy-logo.png'; // If imported
+
 
 const RegisterPage = () => {
   const handleRegistrationSuccess = (userData) => {
@@ -13,16 +12,18 @@ const RegisterPage = () => {
 
   return (
     <AuthLayout>
-      <div className="bg-bh-dark-blue rounded-lg p-10 shadow-lg w-full max-w-md text-white">
-        <div className="text-center mb-5">
-          <img
-            src="/assets/bee-happy-logo.png" // Adjust path
-            alt="BeeHappy Logo"
-            className="w-40 mx-auto" // mx-auto for centering
-          />
-        </div>
-        <h1 className="text-3xl font-bold text-center mb-2">¡Únete a la colmena!</h1>
-        <p className="text-bh-light-blue-gray text-center mb-8">
+      <div className=" rounded-lg px-18 py-5  text-white">
+        <div className="flex items-center justify-start gap-4 mb-5">
+  <img
+    src="bee.png"
+    alt="BeeHappy Logo"
+    className="w-[85.35px] h-[113.px]"
+  />
+  <h1 className="text-5xl font-poppins font-semibold">BeeHappy</h1>
+</div>
+        <p className="text-white font-poppins font-medium text-4xl text-start mb-4">
+          ¡Únete a la colmena!
+        </p> <p className="text-white font-poppins font-medium  text-2xl text-start mb-4">
           Crea tu cuenta para entrar al mundo BeeHappy.
         </p>
         <RegistrationForm onRegistrationSuccess={handleRegistrationSuccess} />

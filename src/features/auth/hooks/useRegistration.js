@@ -1,4 +1,3 @@
-// src/features/auth/hooks/useRegistration.js
 import { useState } from 'react';
 import { validateRegistrationForm } from '../utils/AuthValidation';
 import { registerUser } from '../services/authServices';

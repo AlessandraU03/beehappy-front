@@ -1,4 +1,3 @@
-// src/features/auth/components/RegistrationForm.jsx
 import React from 'react';
 import Input from '../../../shared/components/Input';
 import Button from '../../../shared/components/Button';
@@ -74,8 +73,8 @@ const RegistrationForm = ({ onRegistrationSuccess }) => {
         {isSubmitting ? 'Registrando...' : 'Registrarse'}
       </Button>
 
-      <p className="text-center text-bh-light-blue-gray text-sm mt-6">
-        ¿Ya tienes una cuenta?{' '}
+      <p className="text-center font-poppins font-medium text-lg  mt-6">
+        ¿Ya tienes una cuenta? Inicia sesión{' '}
         
       </p>
     </form>
